@@ -4,6 +4,6 @@
 
 1. download expansion.sh
 2. run it
-```
+```bash
 bash expansion.sh
 ```
