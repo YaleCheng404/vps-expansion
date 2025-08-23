@@ -43,8 +43,8 @@ VPS-Expansion 是一个安全、通用的 Linux 根分区扩容工具，适用�
 ## 📥 Installation | 安装
 
 ```bash
-wget -O expand_root.sh https://your-download-link/expand_root.sh
-chmod +x expand_root.sh
+wget -O expansion.sh https://raw.githubusercontent.com/YaleCheng404/vps-expansion/refs/heads/master/expansion.sh
+chmod +x expansion.sh
 ```
 
 
@@ -54,7 +54,7 @@ chmod +x expand_root.sh
 ### 1. Basic Expansion | 基础扩容
 
 ```bash
-sudo bash expand_root.sh
+sudo bash expansion.sh
 ```
 
 Automatically detects and expands `/` root partition.
@@ -63,7 +63,7 @@ Automatically detects and expands `/` root partition.
 ### 2. Dry Run Mode (No changes) | 预演模式（不做修改）
 
 ```bash
-sudo bash expand_root.sh --dry-run
+sudo bash expansion.sh --dry-run
 ```
 
 Preview actions without making changes.
@@ -72,7 +72,7 @@ Preview actions without making changes.
 ### 3. Specify Target Device | 指定目标分区
 
 ```bash
-sudo bash expand_root.sh --device /dev/sdb1
+sudo bash expansion.sh --device /dev/sdb1
 ```
 
 Force expansion on a specific partition (use with caution).
